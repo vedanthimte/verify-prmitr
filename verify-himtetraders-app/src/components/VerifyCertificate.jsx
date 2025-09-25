@@ -121,13 +121,22 @@ export default function VerifyCertificate() {
             textAlign: "center",
           }}
         >
-          <h2 style={{ color: "#00ff95" }}>✅ Certificate Verified</h2>
-          <h4>
-            <strong>Name:</strong> {certData.name}
-          </h4>
+          <h2 style={{ color: "#00ff95" }}>Certificate Verified ✅</h2>
+          <br/>
+    
+          <h3>
+            <strong></strong> {certData.name}
+          </h3>
+          <br/>
           <p>
-            <strong>Type:</strong> {certData.type}
+            <strong>----  </strong> {certData.event}<strong>  ----</strong> 
           </p>
+          <p>
+            <strong>---  </strong> {certData.type} <strong> --- </strong>
+          </p>
+          <br/>
+          <hr/>
+          <br/>
           <p>
             <strong>Issued By:</strong> {certData.issued_by}
           </p>
